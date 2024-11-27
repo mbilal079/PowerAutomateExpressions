@@ -6,7 +6,6 @@ List Rows action in Power Automate returns value and type column for Lookup colu
 
 **Get the first row from For Each Control** <br>
 Sometimes we need to get the first row only from the List Rows action, you can do it by the following expression. <br>
-first(outputs('List_Academic_Course')?['value'])?['_mb_courseid_value'] or you can use following one <br>
-if(greater(length(outputs('List_Academic_Course'),0)),first(outputs('List_Academic_Course')?['value'])?['_mb_courseid_value'],null)
+first(outputs('List_Academic_Session')?['body/value'])?['mb_sessionname']
 
 
